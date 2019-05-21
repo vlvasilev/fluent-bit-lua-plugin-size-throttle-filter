@@ -7,7 +7,7 @@ This filter for throttling size is written in lua and is intended to be used in 
 To make this plugin work as you wish you have to alter the global variables at the begging of the script.
 
 ### WINDOW_SIZE
-This denote how many time panes must be created to monitoring the load.
+This denote how much panes must be created to monitoring the load.
 Each different stream from which the record is generated will be moniter by a window consist of panes.
 Each pane represent a time interval during which all of the load from all records( record of only one specific stream) will be considered as one.
 For example if during this interval 10 record passed each of which with load 10kb then we assume that during this interval 100kb of data have been passed.
