@@ -33,8 +33,8 @@ For the nested stream `{"kubernetes":{"pod_name":"kube-apiserver"}}` the properl
 If you let this field as empty list all records will be considered as generated form one stream and will be monitored by only one window.
 
 ### USE_TAG_AS_STREAM
-Instead of specifying the `STREAM` variable use this one and the tag will be used as a stream.
-If you used don't forget to set `STREAM={}`.
+Instead of specifying the `STREAM` variable use this one and the tag will be usedas a stream.
+If you used it don't forget to set `STREAM={}`.
 
 ### LOG
 If you want to take into account the size of the entire record live this variable as an empty list.
