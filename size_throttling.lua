@@ -325,7 +325,7 @@ function ThrottleFilter:processRecord(tag, timestamp, record)
 	end
 	
 	--[[update the lastOprationTimestamp to floor(currentTimestamp // self.slideInterval.--]]
-	self.lastOprationTimestamp = (slides * self.slideInterval) + self.lastOprationTimestamp
+	--self.lastOprationTimestamp = (slides * self.slideInterval) + self.lastOprationTimestamp
 	
 	if (self.printStatus and slides > 1) then 
 		self:printAll()
