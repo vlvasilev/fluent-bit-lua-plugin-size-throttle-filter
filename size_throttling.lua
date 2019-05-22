@@ -313,7 +313,7 @@ end
 function ThrottleFilter:processRecord(tag, timestamp, record)
 	local currentTimestamp = getCurrentTimestamp()
 	--[[determine how much slides are to be considered after the last received record--]]
-	local slides = math.floor(currentTimestamp - self.lastOprationTimestamp, self.slideInterval)	
+	local slides = math.floor((currentTimestamp - self.lastOprationTimestamp) / self.slideInterval)	
 	
 	--[[first delete older entries not skip working on then--]]
 	self:deleteOlderWindows(currentTimestamp)
